@@ -1,0 +1,9 @@
+body{
+    background-color: red;
+    color: white;
+}
+#tupian{
+    width: 300px;
+    height: 600px;
+    background-image: url(http://127.0.0.1:3000/images/b8eee44b0657fa78ae802b27391c1ee7.jpg);
+}

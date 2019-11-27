@@ -1,0 +1,9 @@
+body{
+    background-color: red;
+    color: white;
+}
+#tupian{
+    width: 300px;
+    height: 600px;
+    background-image: url(../images/renzhiwei.jpg);
+}

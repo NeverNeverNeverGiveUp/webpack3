@@ -1,0 +1,1 @@
+图片打包还是有wenti,直接打开dist中的html不行。但npm run server没问题
