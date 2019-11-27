@@ -1,0 +1,6 @@
+
+html-webpack-plugin有版本问题：
+https://blog.csdn.net/wangwangwanglichao/article/details/80051415
+
+各版本对应的时间：
+https://www.npmjs.com/package/html-webpack-plugin
