@@ -99,7 +99,7 @@ alert("成功了89999！");
 /* 3 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: TypeError: this.getResolve is not a function\n    at Object.loader (d:\\study\\webpack3\\12SASS文件的打包和分离\\node_modules\\_sass-loader@8.0.0@sass-loader\\dist\\index.js:52:26)\n    at runLoaders (d:\\study\\webpack3\\12SASS文件的打包和分离\\node_modules\\_webpack@3.12.0@webpack\\lib\\NormalModule.js:195:19)\n    at d:\\study\\webpack3\\12SASS文件的打包和分离\\node_modules\\_loader-runner@2.4.0@loader-runner\\lib\\LoaderRunner.js:367:11\n    at d:\\study\\webpack3\\12SASS文件的打包和分离\\node_modules\\_loader-runner@2.4.0@loader-runner\\lib\\LoaderRunner.js:233:18\n    at runSyncOrAsync (d:\\study\\webpack3\\12SASS文件的打包和分离\\node_modules\\_loader-runner@2.4.0@loader-runner\\lib\\LoaderRunner.js:143:3)\n    at iterateNormalLoaders (d:\\study\\webpack3\\12SASS文件的打包和分离\\node_modules\\_loader-runner@2.4.0@loader-runner\\lib\\LoaderRunner.js:232:2)\n    at d:\\study\\webpack3\\12SASS文件的打包和分离\\node_modules\\_loader-runner@2.4.0@loader-runner\\lib\\LoaderRunner.js:205:4\n    at d:\\study\\webpack3\\12SASS文件的打包和分离\\node_modules\\_enhanced-resolve@3.4.1@enhanced-resolve\\lib\\CachedInputFileSystem.js:70:14\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
