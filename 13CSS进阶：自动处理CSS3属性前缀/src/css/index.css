@@ -1,0 +1,14 @@
+body{
+    background-color: wheat;
+    color: white;
+}
+#tupian{
+    width: 100px;
+    height: 200px;
+    background-image: url(../images/renzhiwei.jpg);
+    background-size: 100%;
+    transform: rotate(45deg);
+    box-sizing:border-box;
+    border-radius:50% ;
+    column-count:3;
+}
