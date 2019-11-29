@@ -1,0 +1,9 @@
+$nav-color:blue;
+
+#blue{
+    $width:100%;
+    width:$width;
+    height:100px;
+    background-color:$nav-color;
+    transform: rotate(45deg);
+}
