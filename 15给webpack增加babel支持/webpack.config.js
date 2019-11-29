@@ -6,8 +6,8 @@ const htmlPlugin = require("html-webpack-plugin");
 const extractTextPlugin = require("extract-text-webpack-plugin");
 
 // 因为我们需要同步检查html模板，所以我们需要引入node的glob对象使用(CSS进阶：消除未使用的CSS)
-const glob=require("glob");
-const PurifyCSSPlugin=require("purifycss-webpack");
+const glob = require("glob");
+const PurifyCSSPlugin = require("purifycss-webpack");
 
 var website = {
     publicPath: "http://127.0.0.1:3000/"
@@ -85,19 +85,14 @@ module.exports = {
                     fallback: "style-loader"
                 })
             },
-            // {
-            //     test:/\.(jsx|js)$/,
-            //     use:{
-            //         loader:"babel-loader",
-            //         options:{
-            //             presets:[
-            //                 "es2015",
-            //                 "react"
-            //             ]
-            //         }
-            //     },
-            //     exclude:/node_modules/
-            // }
+            {
+                test: /\.(jsx|js)$/,
+                use: {
+                    loader: "babel-loader"
+                },
+                // exclude是排除的意思。这个属性的意思就是不要去匹配node_modules目录中的文件。
+                exclude: /node_modules/
+            },
         ]
     },
     // 插件，用户声场模板和各项功能
@@ -116,7 +111,7 @@ module.exports = {
         new extractTextPlugin("/css/index.css"),
         new PurifyCSSPlugin({
             // paths主要是需找html模板，purifycss根据这个配置会遍历你的文件，查找哪些css被使用了。
-            paths:glob.sync(path.join(__dirname,"src/*.html"))
+            paths: glob.sync(path.join(__dirname, "src/*.html"))
         })
 
     ],
@@ -131,5 +126,5 @@ module.exports = {
         // 配置服务端口号
         port: 3000
 
-    }   
+    }
 }
